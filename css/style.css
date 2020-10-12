@@ -1,0 +1,163 @@
+/*Обнуление*/
+ {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   /* min-height: 100% !important; */
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+/*--------------------*/
+body {
+   background: black;
+}
+.text_start {
+   color: rgb(75, 159, 238);
+   display: block;
+   text-align: center;
+   position: relative;
+   top: 45%;
+   font-size: 32px;
+   width: 14em;
+   margin: 0 auto;
+   opacity: 1;
+   animation: textstart 5s ease 0s;
+   animation-fill-mode: forwards;
+}
+@keyframes textstart {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
+}
+.img_logo {
+   width: 100%;
+   opacity: 0;
+   position: relative;
+   text-align: center;
+   top: 20%;
+   animation: starlogo 10s ease 5s;
+   animation-fill-mode: forwards;
+   transform: scale(1);
+}
+@keyframes starlogo {
+   0% {
+      transform: scale(1);
+      opacity: 1;
+   }
+
+   40% {
+      transform: scale(1);
+      opacity: 1;
+   }
+
+   100% {
+      transform: scale(0);
+      opacity: 1;
+   }
+}
+.back {
+   position: absolute;
+   text-align: center;
+   transform: perspective(300px) rotateX(25deg);
+   width: 18em;
+   height: 50em;
+   margin-left: -9em;
+   font-size: 350%;
+   left: 50%;
+   bottom: 0;
+   transform-origin: 50% 100%;
+   overflow: hidden;
+}
+.text {
+   position: absolute;
+   animation: scroll 60s linear 14s infinite;
+   top: 100%;
+   color: rgb(245, 242, 73);
+}
+.wrapper {
+   height: 100vh;
+}
+@keyframes scroll {
+   0% {
+      top: 100%;
+   }
+   100% {
+      top: -200%;
+   }
+}
+
